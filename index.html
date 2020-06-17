@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Krle</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+			integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+			crossorigin="anonymous"
+	></script>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+		<span class="navbar-brand mb-0 h1"> Krle </span>
+		<span class="navbar-brand mb-0 h1" id="Heading"></span>
+	</nav>
+	<div class="container-fluid bg-light" style="min-height: 50vh">
+		<div class="container">
+			<div class="jumbotron mt-4">
+				<form>
+  					<fieldset>
+  						<legend align="center">Time is the <b>REAL</b> Currency.</legend>
+  						<div class="input-group mb-3">
+  							<div class="input-group-prepend">
+    							<label class="input-group-text" for="selectActivity">Type of Activity </label>
+  							</div>
+						    <select class="custom-select" id="selectActivity">						        
+					            <option value="Study">Study</option>
+					            <option value="Entertainment">Entertainment</option>
+					            <option value="Office-Work">Office-Work</option>
+					            <option value="Relatonship">Relatonship</option>
+					            <option value="HouseHold-Chores">HouseHold-Chores</option>
+					            <option value="Shopping">Shopping</option>
+					            <option value="Health-and-Fitness">Health-and-Fitness</option>
+					            <option value="Others">Others</option>
+						    </select>
+						</div>
+						<div class="input-group mb-3">
+  							<div class="input-group-prepend">
+    							<label class="input-group-text" for="Activity">Activity</label>
+  							</div>
+  							<input type="text" 
+  							class="form-control"
+  							id="Activity"
+  							placeholder="Activity Name" 
+  							aria-label="Activity Name" 
+  							aria-describedby="Name of the activity">
+  						</div>
+  						<div>
+  							<div class="input-group">
+  								<div class="input-group-prepend">
+    								<span class="input-group-text">Start time</span>
+  								</div>
+  								<input 
+  									type="time" 
+  									id="start-time" 
+  									class="form-control" 
+  									aria-label="Starting Time" 
+  									aria-describedby="Time of activity starts">
+  								<div class="input-group-prepend">
+    								<span class="input-group-text">End time</span>
+  								</div>
+  								<input 
+  									type="time" 
+  									id="end-time" 
+  									class="form-control" 
+  									aria-label="Ending Time" 
+  									aria-describedby="Time of activity ends">
+							</div>
+  						</div>
+  						<br>
+  						<div class = "col-xs-4 text-right">
+    						<button 
+	    						class="btn btn-success" 
+	    						type="button" 
+	    						id="AddActivity">
+	    							Add Activity
+    						</button>
+    					</div>
+  					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-light">
+		<div class="container">
+			<table class="table table-striped table-sm">
+				<tbody id="ActivityTable">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div>
+		<div class="container-fluid bg-light">
+			<div class="container">
+				<legend>Activities Scheduled</legend>
+				<ul class="list-group" id="Activities">			
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<script src="./jss/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>
